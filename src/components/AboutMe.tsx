@@ -1,9 +1,11 @@
 export default function AboutMe() {
+    const basePath = import.meta.env.BASE_URL;
+  
     return (
       <section className="bg-cafe text-white py-20 px-6 md:px-20" id="about">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
           <img
-            src="/profile.jpg"
+            src={`${basePath}profile.jpg`}
             alt="Armando Alean"
             className="w-64 h-64 rounded-xl object-cover shadow-2xl border-4 border-dorado"
           />

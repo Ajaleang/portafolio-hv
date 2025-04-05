@@ -1,8 +1,11 @@
+
 const Hero = () => {
+    const basePath = import.meta.env.BASE_URL;
+
     return (
       <section
         className="relative min-h-screen flex flex-col justify-center items-center text-center text-white px-4 pt-24 bg-cover bg-center"
-        style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+        style={{ backgroundImage: `url('${basePath}hero-bg.jpg')` }}
       >
         {/* Overlay para oscurecer y hacer más legible el texto */}
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
