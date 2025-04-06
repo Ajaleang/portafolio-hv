@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaPaperPlane } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, /*FaTwitter,*/ FaPaperPlane } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -31,11 +31,11 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="text-lg font-semibold mb-2">Sígueme</h4>
+          <h4 className="text-lg font-bold mb-2">Sígueme</h4>
           <div className="flex space-x-4 text-2xl">
-            <a href="#" target="_blank" rel="noreferrer"><FaGithub /></a>
-            <a href="#" target="_blank" rel="noreferrer"><FaLinkedin /></a>
-            <a href="#" target="_blank" rel="noreferrer"><FaTwitter /></a>
+            <a href="https://github.com/Ajaleang" target="_blank" rel="noreferrer"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/ajaleang" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+            {/*<a href="#" target="_blank" rel="noreferrer"><FaTwitter /></a>*/}
           </div>
         </div>
 

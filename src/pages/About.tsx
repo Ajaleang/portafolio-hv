@@ -5,8 +5,8 @@ const About = () => {
   return (
     <div className="py-16 px-6">
       <AboutMe />
-      <Testimonials />
       <Skills />
+      <Testimonials />
     </div>
   );
 };
