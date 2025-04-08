@@ -1,6 +1,8 @@
 # 🌐 Portafolio Profesional – Armando Alean
 
-Bienvenido a mi portafolio web. Soy **Armando Alean**, Ingeniero Electrónico e Ingeniero de Control con experiencia en desarrollo backend, IoT y automatización de sistemas. Este sitio está construido con **React**, **TypeScript** y **Tailwind CSS**, y desplegado en **GitHub Pages**.
+Bienvenido a mi portafolio web. Soy **Armando Alean**, Estudiante de ingeniería Electrónico  con experiencia en desarrollo backend, IoT y automatización de sistemas. Este sitio está construido con **React**, **TypeScript** y **Tailwind CSS**, y desplegado en **GitHub Pages**.
+
+Página personal: [Acceder](https://ajaleang.github.io/portafolio-hv/#/)
 
 ## 🧰 Tecnologías utilizadas
 
