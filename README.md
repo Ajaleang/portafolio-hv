@@ -1,54 +1,43 @@
-# React + TypeScript + Vite
+# 🌐 Portafolio Profesional – Armando Alean
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi portafolio web. Soy **Armando Alean**, Ingeniero Electrónico e Ingeniero de Control con experiencia en desarrollo backend, IoT y automatización de sistemas. Este sitio está construido con **React**, **TypeScript** y **Tailwind CSS**, y desplegado en **GitHub Pages**.
 
-Currently, two official plugins are available:
+## 🧰 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React
+- 💅 Tailwind CSS
+- 🧠 TypeScript
+- 📦 Vite
+- 🚀 GitHub Pages
 
-## Expanding the ESLint configuration
+## 📂 Estructura del proyecto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- `src/components`: Componentes reutilizables (Navbar, Footer, etc.)
+- `src/pages`: Páginas principales (Inicio, Sobre Mí, Contacto)
+- `public/`: Archivos estáticos (imágenes, íconos)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🖥️ Demo en vivo
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🔗 [Ver sitio en GitHub Pages](https://tuusuario.github.io/portafolio-hv/)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ✨ Características
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Diseño responsivo y moderno
+- Navegación con React Router
+- Estilos personalizados con Tailwind
+- Formularios de contacto y mapa integrado
+- Estructura modular para escalar fácilmente
+
+## 📸 Capturas
+
+_Añade aquí capturas si deseas mostrar vistas previas del diseño._
+
+## 📬 Contacto
+
+- Email: [ajaleang@gmail.com](mailto:ajaleang@gmail.com)
+- LinkedIn: [linkedin.com/in/tuusuario](https://linkedin.com/in/tuusuario)
+- GitHub: [github.com/tuusuario](https://github.com/tuusuario)
+
+---
+
+Gracias por visitar mi portafolio 🚀
