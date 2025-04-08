@@ -32,7 +32,7 @@ _Añade aquí capturas si deseas mostrar vistas previas del diseño._
 ## 📬 Contacto
 
 - Email: [ajaleang@gmail.com](mailto:ajaleang@gmail.com)
-- LinkedIn: [linkedin.com/in/tuusuario](https://linkedin.com/in/ajaleang)
+- LinkedIn: [ingresa aqui](https://linkedin.com/in/ajaleang)
 
 ---
 
