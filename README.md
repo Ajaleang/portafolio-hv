@@ -16,9 +16,6 @@ Bienvenido a mi portafolio web. Soy **Armando Alean**, Ingeniero Electrónico e 
 - `src/pages`: Páginas principales (Inicio, Sobre Mí, Contacto)
 - `public/`: Archivos estáticos (imágenes, íconos)
 
-## 🖥️ Demo en vivo
-
-🔗 [Ver sitio en GitHub Pages](https://tuusuario.github.io/portafolio-hv/)
 
 ## ✨ Características
 
@@ -35,8 +32,7 @@ _Añade aquí capturas si deseas mostrar vistas previas del diseño._
 ## 📬 Contacto
 
 - Email: [ajaleang@gmail.com](mailto:ajaleang@gmail.com)
-- LinkedIn: [linkedin.com/in/tuusuario](https://linkedin.com/in/tuusuario)
-- GitHub: [github.com/tuusuario](https://github.com/tuusuario)
+- LinkedIn: [linkedin.com/in/tuusuario](https://linkedin.com/in/ajaleang)
 
 ---
 
