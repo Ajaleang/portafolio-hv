@@ -8,6 +8,7 @@ const Navbar = () => {
         <Link to="/" className="hover:text-dorado transition">Inicio</Link>
         <Link to="/sobre-mi" className="hover:text-dorado transition">Sobre Mí</Link>
         <Link to="/contact" className="hover:text-dorado transition">Contacto </Link>
+        <Link to="/proyectos" className="hover:text-dorado transition">Proyectos</Link>
       </div>
     </nav>
   );

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -7,8 +7,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    // BASE NAME agregado para subdirectorio en GitHub Pages
-    <Router basename="/portafolio-hv/">
+    <Router>
       <div className="bg-cafe text-white min-h-screen flex flex-col justify-between">
         <Navbar />
         <main className="flex-grow">
