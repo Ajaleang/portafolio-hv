@@ -12,7 +12,7 @@ export default function AboutMe() {
           <div>
             <h2 className="text-4xl font-bold mb-6 text-dorado">Sobre Mí</h2>
             <p className="text-lg leading-relaxed text-justify mb-4">
-              Soy <strong>Armando Alean</strong>, Ingeniero Electrónico e Ingeniero de Control. Apasionado por la tecnología, me dedico a crear soluciones que combinan eficiencia, innovación y sostenibilidad. 
+              Soy <strong>Armando Alean</strong>, Ingeniero Electrónico y de Control. Apasionado por la tecnología, me dedico a crear soluciones que combinan eficiencia, innovación y sostenibilidad. 
               Me especializo en el desarrollo de sistemas embebidos, automatización industrial, IoT y backend, con una visión integral y estratégica.
             </p>
             <p className="text-lg leading-relaxed text-justify mb-4">

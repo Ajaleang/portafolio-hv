@@ -28,8 +28,8 @@ const Navbar = () => {
             <Link to="/contact" onClick={closeMenu} className="hover:text-dorado transition duration-300 font-medium">
               Contacto
             </Link>
-            <Link to="/proyectos" onClick={closeMenu} className="hover:text-dorado transition duration-300 font-medium">
-              Proyectos
+            <Link to ="/servicios" onClick={closeMenu} className="hover:text-dorado transition duration-300 font-medium">
+              Servicios
             </Link>
           </div>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
           <Link to="/" onClick={closeMenu} className="block hover:text-dorado font-medium">Inicio</Link>
           <Link to="/sobre-mi" onClick={closeMenu} className="block hover:text-dorado font-medium">Sobre Mí</Link>
           <Link to="/contact" onClick={closeMenu} className="block hover:text-dorado font-medium">Contacto</Link>
-          <Link to="/proyectos" onClick={closeMenu} className="block hover:text-dorado font-medium">Proyectos</Link>
+          <Link to="/servicios" onClick={closeMenu} className="block hover:text-dorado font-medium">Servicios</Link>
         </div>
       )}
     </nav>
