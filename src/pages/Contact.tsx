@@ -1,16 +1,74 @@
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
+  const form = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
+
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
+
+    if (!form.current) return;
+
+    try {
+      emailjs.init('mc6YTZRg94Fv8zWyu');
+      
+      const formData = {
+        user_name: form.current.user_name.value,
+        user_email: form.current.user_email.value,
+        message: form.current.message.value
+      };
+
+      // Enviar el mensaje principal
+      await emailjs.send(
+        'service_yhudzxv',
+        'template_9efvrsc',
+        formData,
+        'mc6YTZRg94Fv8zWyu'
+      );
+
+      // Enviar el autoreply
+      await emailjs.send(
+        'service_yhudzxv',
+        'template_jxr5wsc',
+        {
+          user_name: formData.user_name,
+          user_email: formData.user_email,
+          to_email: formData.user_email,
+          message: formData.message
+        },
+        'mc6YTZRg94Fv8zWyu'
+      );
+
+      setSubmitStatus({ type: 'success', message: '¡Mensaje enviado con éxito!' });
+      form.current.reset();
+    } catch (error: any) {
+      console.error('Error:', error);
+      setSubmitStatus({
+        type: 'error',
+        message: `Error al enviar el mensaje: ${error.text || 'Verifica tu conexión y las credenciales de EmailJS'}`
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
     return (
       <section className="bg-cafe-claro text-white py-16 px-4 md:px-20" id="contact">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           {/* Formulario */}
           <div>
             <h2 className="text-3xl font-bold mb-6 text-dorado">Contáctame</h2>
-            <form className="space-y-6">
+            <form ref={form} onSubmit={sendEmail} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block mb-2 text-sm font-medium">Nombre</label>
                 <input
                   type="text"
                   id="name"
+                  name="user_name"
                   className="w-full p-3 rounded bg-cafe border border-gray-600 text-white"
                   placeholder="Tu nombre"
                   required
@@ -21,6 +79,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
+                  name="user_email"
                   className="w-full p-3 rounded bg-cafe border border-gray-600 text-white"
                   placeholder="tucorreo@ejemplo.com"
                   required
@@ -30,17 +89,24 @@ const Contact = () => {
                 <label htmlFor="message" className="block mb-2 text-sm font-medium">Mensaje</label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={5}
                   className="w-full p-3 rounded bg-cafe border border-gray-600 text-white"
                   placeholder="Tu mensaje..."
                   required
                 />
               </div>
+              {submitStatus.type && (
+                <div className={`p-4 rounded ${submitStatus.type === 'success' ? 'bg-green-600' : 'bg-red-600'}`}>
+                  {submitStatus.message}
+                </div>
+              )}
               <button
                 type="submit"
-                className="bg-dorado text-cafe font-semibold py-2 px-6 rounded hover:bg-yellow-400 transition"
+                disabled={isSubmitting}
+                className={`bg-dorado text-cafe font-semibold py-2 px-6 rounded hover:bg-yellow-400 transition ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
               >
-                Enviar mensaje
+                {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}
               </button>
             </form>
           </div>
@@ -64,7 +130,7 @@ const Contact = () => {
         </div>
       </section>
     );
-  };
+};
   
   export default Contact;
   

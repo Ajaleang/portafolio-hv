@@ -5,6 +5,7 @@ import About from './pages/About';
 import Footer from './components/footer';
 import Contact from './pages/Contact';
 import Servicios from './pages/Servicios';
+import Projects from './pages/Projects';
 import WhatsAppButton from './components/WhatsAppButton';
 
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/sobre-mi" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/servicios" element={<Servicios />} />
+            <Route path="/proyectos" element={<Projects />} />
           </Routes>
         </main>
         <WhatsAppButton />

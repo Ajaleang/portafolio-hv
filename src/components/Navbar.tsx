@@ -28,8 +28,11 @@ const Navbar = () => {
             <Link to="/contact" onClick={closeMenu} className="hover:text-dorado transition duration-300 font-medium">
               Contacto
             </Link>
-            <Link to ="/servicios" onClick={closeMenu} className="hover:text-dorado transition duration-300 font-medium">
+            <Link to="/servicios" onClick={closeMenu} className="hover:text-dorado transition duration-300 font-medium">
               Servicios
+            </Link>
+            <Link to="/proyectos" onClick={closeMenu} className="hover:text-dorado transition duration-300 font-medium">
+              Proyectos
             </Link>
           </div>
 
@@ -54,6 +57,7 @@ const Navbar = () => {
           <Link to="/sobre-mi" onClick={closeMenu} className="block hover:text-dorado font-medium">Sobre Mí</Link>
           <Link to="/contact" onClick={closeMenu} className="block hover:text-dorado font-medium">Contacto</Link>
           <Link to="/servicios" onClick={closeMenu} className="block hover:text-dorado font-medium">Servicios</Link>
+          <Link to="/proyectos" onClick={closeMenu} className="block hover:text-dorado font-medium">Proyectos</Link>
         </div>
       )}
     </nav>
