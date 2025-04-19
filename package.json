@@ -1,7 +1,6 @@
 {
   "name": "mi-portfolio",
   "private": true,
-  "homepage": "https://ajaleang.github.io/portafolio-hv/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

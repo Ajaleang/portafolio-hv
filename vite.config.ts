@@ -2,6 +2,6 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/portafolio-hv/', // este nombre debe coincidir con el de tu repositorio en GitHub
+  base: '/', // 👈 esto es clave para Vercel
   plugins: [react()],
 });
