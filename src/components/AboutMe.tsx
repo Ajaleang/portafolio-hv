@@ -12,14 +12,13 @@ export default function AboutMe() {
           <div>
             <h2 className="text-4xl font-bold mb-6 text-dorado">Sobre Mí</h2>
             <p className="text-lg leading-relaxed text-justify mb-4">
-              Soy <strong>Armando Alean</strong>, Ingeniero Electrónico y de Control. Apasionado por la tecnología, me dedico a crear soluciones que combinan eficiencia, innovación y sostenibilidad. 
-              Me especializo en el desarrollo de sistemas embebidos, automatización industrial, IoT y backend, con una visión integral y estratégica.
+              Soy <strong>Armando Alean</strong>, Ingeniero Electrónico con experiencia en desarrollo fullstack e integración de sistemas en entornos corporativos. Me especializo en diseño e implementación de <strong>APIs REST</strong>, modelado de bases de datos relacionales y automatización de despliegues mediante <strong>CI/CD</strong>.
             </p>
             <p className="text-lg leading-relaxed text-justify mb-4">
-              A lo largo de mi trayectoria, he liderado y colaborado en proyectos donde la tecnología mejora la productividad, la toma de decisiones y la conectividad de los sistemas. Siempre busco mantenerme actualizado y aplicar buenas prácticas en cada etapa del desarrollo.
+              Cuento con experiencia en entornos cloud (<strong>AWS</strong>), infraestructura como código (Terraform / CloudFormation) y contenedores (<strong>Docker</strong>), habiendo participado en soporte operativo, gestión de incidencias y aplicación de buenas prácticas de seguridad en el ciclo de vida del software.
             </p>
             <p className="text-lg leading-relaxed text-justify">
-              Fuera del ámbito técnico, disfruto colaborar con equipos multidisciplinarios, participar en iniciativas educativas y fomentar el crecimiento profesional de la comunidad tecnológica.
+              Actualmente me desempeño como <strong>Analista de Desarrollo en SURA Colombia</strong>, trabajando con Node.js y Scala bajo principios de Arquitectura Hexagonal y DDD. Disfruto colaborar con equipos multidisciplinarios y resolver problemas complejos de integración en entornos empresariales regulados.
             </p>
           </div>
         </div>

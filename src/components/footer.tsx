@@ -8,8 +8,8 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-2">Armando Alean</h3>
           <p>
-            Ingeniero electrónico apasionado por el desarrollo backend,
-            el diseño de sistemas inteligentes e IoT.
+            Ingeniero Electrónico especializado en desarrollo backend,
+            integración de APIs y despliegue cloud.
           </p>
         </div>
 
@@ -26,7 +26,7 @@ const Footer = () => {
 
         <div>
           <h4 className="text-lg font-semibold mb-2">Contacto</h4>
-          <p>Email: <a href="mailto:ajaleang@gmail.com" className="text-dorado">ajaleang@gmail.com</a></p>
+          <p>Email: <a href="mailto:ajaleang@unal.edu.co" className="text-dorado">ajaleang@unal.edu.co</a></p>
           <p>Ubicación: Bogotá, Colombia</p>
         </div>
 
@@ -55,7 +55,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center text-sm text-gray-400 mt-8">
-        &copy; 2025 Armando Alean. Todos los derechos reservados.
+        &copy; 2026 Armando Alean. Todos los derechos reservados.
       </div>
     </footer>
   );

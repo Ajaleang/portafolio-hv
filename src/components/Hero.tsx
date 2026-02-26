@@ -15,8 +15,8 @@ const Hero = () => {
           ¡Hola! Soy <span className="text-dorado">Armando Alean</span>
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mb-8 text-gray-300">
-          Ingeniero Electrónico apasionado por crear soluciones inteligentes y sostenibles.
-          ¿Listo para llevar tu proyecto al siguiente nivel?
+          Ingeniero Electrónico especializado en desarrollo backend, integración de APIs y despliegue en la nube.
+          Transformo ideas en sistemas robustos, escalables y bien integrados.
         </p>
         <Link
           to="/sobre-mi"

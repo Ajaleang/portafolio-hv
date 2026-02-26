@@ -5,46 +5,46 @@ interface Project {
   id: number;
   title: string;
   description: string;
-  category: 'IoT' | 'Backend' | 'Sistemas Inteligentes';
+  category: 'Fullstack' | 'Backend' | 'Integración';
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
 }
 
 const categoryIcons: Record<string, string> = {
-  IoT: '📡',
+  Fullstack: '🖥️',
   Backend: '⚙️',
-  'Sistemas Inteligentes': '🧠',
+  Integración: '🔗',
 };
 
 const projects: Project[] = [
   {
     id: 1,
-    title: "Sistema de Monitoreo Ambiental IoT",
-    description: "Sistema en tiempo real para monitoreo de variables ambientales utilizando sensores conectados a la nube. Implementa análisis de datos y alertas automáticas.",
-    category: "IoT",
-    technologies: ["ESP32", "MQTT", "Node.js", "MongoDB", "React"],
+    title: "Quanticon Valley — Plataforma Educativa Gamificada",
+    description: "Plataforma educativa gamificada desarrollada para la Universidad Nacional de Colombia. Incluye gestión de usuarios, seguimiento de métricas académicas e integración cliente-servidor mediante APIs REST.",
+    category: "Fullstack",
+    technologies: ["React", "Node.js", "TypeScript", "PostgreSQL", "APIs REST"],
   },
   {
     id: 2,
-    title: "API REST para Gestión de Dispositivos",
-    description: "Backend robusto para administración de dispositivos IoT, incluyendo autenticación, autorización y logging de eventos.",
+    title: "Infraestructura Serverless en AWS",
+    description: "Diseño y despliegue de servicios backend serverless para procesamiento de datos y exposición de APIs. Infraestructura reproducible definida como código con Terraform y CloudFormation.",
     category: "Backend",
-    technologies: ["Node.js", "Express", "PostgreSQL", "JWT", "Docker"],
+    technologies: ["Node.js", "Python", "AWS Lambda", "API Gateway", "Terraform", "CloudFormation"],
   },
   {
     id: 3,
-    title: "Sistema de Control Inteligente",
-    description: "Implementación de algoritmos de control adaptativo y machine learning para optimización de procesos industriales.",
-    category: "Sistemas Inteligentes",
-    technologies: ["Python", "TensorFlow", "Scikit-learn", "Flask", "React"],
+    title: "Integración de Servicios Backend Corporativos",
+    description: "Desarrollo e integración de servicios backend en entorno empresarial regulado bajo Arquitectura Hexagonal y DDD. Incluye comunicación asíncrona con RabbitMQ, pipelines CI/CD y migración tecnológica Scala → Java.",
+    category: "Integración",
+    technologies: ["Node.js", "Scala", "RabbitMQ", "PostgreSQL", "Azure DevOps", "Docker"],
   }
 ];
 
 const Projects: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
 
-  const categories = ['all', 'IoT', 'Backend', 'Sistemas Inteligentes'];
+  const categories = ['all', 'Fullstack', 'Backend', 'Integración'];
 
   const filteredProjects = selectedCategory === 'all'
     ? projects
