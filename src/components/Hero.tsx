@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center text-center text-white px-4 pt-24 bg-cafe overflow-hidden">
-      {/* Fondo decorativo */}
-      <div className="absolute inset-0 bg-gradient-to-br from-cafe via-cafe-claro to-cafe opacity-90"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(212,175,55,0.15),_transparent_60%)]"></div>
+  const basePath = import.meta.env.BASE_URL;
 
-      {/* Contenido centrado */}
+  return (
+    <section
+      className="relative min-h-screen flex flex-col justify-center items-center text-center text-white px-4 pt-24 bg-cover bg-center"
+      style={{ backgroundImage: `url('${basePath}hero-bg.jpg')` }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+
       <div className="relative z-10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
           ¡Hola! Soy <span className="text-dorado">Armando Alean</span>
