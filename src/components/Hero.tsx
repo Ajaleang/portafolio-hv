@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { FaDownload } from 'react-icons/fa';
 
 const Hero = () => {
   const basePath = import.meta.env.BASE_URL;
@@ -18,12 +19,22 @@ const Hero = () => {
           Ingeniero Electrónico especializado en desarrollo backend, integración de APIs y despliegue en la nube.
           Transformo ideas en sistemas robustos, escalables y bien integrados.
         </p>
-        <Link
-          to="/sobre-mi"
-          className="bg-dorado text-cafe font-semibold py-3 px-8 rounded-full hover:bg-yellow-400 transition duration-300"
-        >
-          Conóceme
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            to="/sobre-mi"
+            className="bg-dorado text-cafe font-semibold py-3 px-8 rounded-full hover:bg-yellow-400 transition duration-300"
+          >
+            Conóceme
+          </Link>
+          <a
+            href={`${basePath}CvAalean.pdf`}
+            download="CV-Armando-Alean.pdf"
+            className="flex items-center justify-center gap-2 border-2 border-dorado text-dorado font-semibold py-3 px-8 rounded-full hover:bg-dorado hover:text-cafe transition duration-300"
+          >
+            <FaDownload className="text-sm" />
+            Descargar CV
+          </a>
+        </div>
       </div>
     </section>
   );
