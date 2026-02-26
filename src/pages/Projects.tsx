@@ -7,10 +7,15 @@ interface Project {
   description: string;
   category: 'IoT' | 'Backend' | 'Sistemas Inteligentes';
   technologies: string[];
-  image: string;
   githubUrl?: string;
   liveUrl?: string;
 }
+
+const categoryIcons: Record<string, string> = {
+  IoT: '📡',
+  Backend: '⚙️',
+  'Sistemas Inteligentes': '🧠',
+};
 
 const projects: Project[] = [
   {
@@ -19,8 +24,6 @@ const projects: Project[] = [
     description: "Sistema en tiempo real para monitoreo de variables ambientales utilizando sensores conectados a la nube. Implementa análisis de datos y alertas automáticas.",
     category: "IoT",
     technologies: ["ESP32", "MQTT", "Node.js", "MongoDB", "React"],
-    image: "/images/environment-monitoring.jpg",
-    githubUrl: "https://github.com/username/environmental-monitoring"
   },
   {
     id: 2,
@@ -28,8 +31,6 @@ const projects: Project[] = [
     description: "Backend robusto para administración de dispositivos IoT, incluyendo autenticación, autorización y logging de eventos.",
     category: "Backend",
     technologies: ["Node.js", "Express", "PostgreSQL", "JWT", "Docker"],
-    image: "/images/api-management.jpg",
-    githubUrl: "https://github.com/username/device-management-api"
   },
   {
     id: 3,
@@ -37,8 +38,6 @@ const projects: Project[] = [
     description: "Implementación de algoritmos de control adaptativo y machine learning para optimización de procesos industriales.",
     category: "Sistemas Inteligentes",
     technologies: ["Python", "TensorFlow", "Scikit-learn", "Flask", "React"],
-    image: "/images/smart-control.jpg",
-    githubUrl: "https://github.com/username/smart-control-system"
   }
 ];
 
@@ -80,13 +79,9 @@ const Projects: React.FC = () => {
               key={project.id}
               className="bg-cafe-claro rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
             >
-              <div className="relative">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="absolute top-0 right-0 m-4 bg-dorado text-cafe px-3 py-1 rounded-full text-sm font-semibold">
+              <div className="h-28 bg-gradient-to-br from-cafe to-cafe-claro flex items-center justify-center relative">
+                <span className="text-5xl">{categoryIcons[project.category]}</span>
+                <div className="absolute top-0 right-0 m-3 bg-dorado text-cafe px-3 py-1 rounded-full text-sm font-semibold">
                   {project.category}
                 </div>
               </div>

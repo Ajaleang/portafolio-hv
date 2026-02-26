@@ -2,7 +2,7 @@ const WhatsAppButton = () => {
     return (
       <a
         href="https://wa.me/573059152346?text=Hola%20Armando,%20vi%20tu%20portafolio%20y%20quiero%20contactarte"
-        className="fixed top-[75%] right-40 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg z-50"
+        className="fixed bottom-6 right-4 md:right-8 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg z-50 transition-transform hover:scale-110"
         target="_blank"
         rel="noreferrer"
         aria-label="Chat en WhatsApp"

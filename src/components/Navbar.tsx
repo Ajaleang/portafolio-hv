@@ -9,7 +9,7 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="bg-gradient-to-r from-brown-800 via-brown-350 to-brown-200 shadow-lg sticky top-0 z-50">
+    <nav className="bg-cafe-claro shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -52,7 +52,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-gradient-to-r from-brown-800 via-brown-600 to-brown-400 text-white px-4 pb-4 pt-2 space-y-2 transition-all duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+        <div className="md:hidden bg-cafe-claro text-white px-4 pb-4 pt-2 space-y-2 border-t border-dorado border-opacity-20">
           <Link to="/" onClick={closeMenu} className="block hover:text-white font-medium">Inicio</Link>
           <Link to="/sobre-mi" onClick={closeMenu} className="block hover:text-white font-medium">Sobre Mí</Link>
           <Link to="/contact" onClick={closeMenu} className="block hover:text-white font-medium">Contacto</Link>
