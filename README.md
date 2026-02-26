@@ -2,7 +2,7 @@
 
 Bienvenido a mi portafolio web. Soy **Armando Alean**, Estudiante de ingeniería Electrónico  con experiencia en desarrollo backend, IoT y automatización de sistemas. Este sitio está en construcción y se está realizando con **React**, **TypeScript** y **Tailwind CSS**, y desplegado en **GitHub Pages**.
 
-Página personal: [Acceder](https://ajaleang.github.io/portafolio-hv/#/)
+Página personal: [Acceder](https://aalean.vercel.app)
 
 ## 🧰 Tecnologías utilizadas
 

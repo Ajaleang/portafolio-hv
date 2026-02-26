@@ -1,15 +1,14 @@
 import { Link } from 'react-router-dom';
 import { FaDownload } from 'react-icons/fa';
+import HeroBackground from './HeroBackground';
 
 const Hero = () => {
   const basePath = import.meta.env.BASE_URL;
 
   return (
-    <section
-      className="relative min-h-screen flex flex-col justify-center items-center text-center text-white px-4 pt-24 bg-cover bg-center"
-      style={{ backgroundImage: `url('${basePath}hero-bg.jpg')` }}
-    >
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+    <section className="relative min-h-screen flex flex-col justify-center items-center text-center text-white px-4 pt-24 bg-cafe overflow-hidden">
+      <HeroBackground />
+      <div className="absolute inset-0 bg-cafe bg-opacity-40"></div>
 
       <div className="relative z-10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
