@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ── Theme: Dark (default) ─────────────────────────── */
+:root {
+  --cafe:       46 31 28;    /* #2e1f1c */
+  --cafe-claro: 74 51 47;    /* #4a332f */
+  --dorado:     212 175 55;  /* #d4af37 */
+}
+
+/* ── Theme: Light ───────────────────────────────────── */
+html.light {
+  --cafe:       250 244 238; /* #faf4ee — crema cálido */
+  --cafe-claro: 237 225 213; /* #ede1d5 — beige suave  */
+  --dorado:     161 122 20;  /* #a17a14 — dorado oscuro para contraste */
+}
+
+/* Texto base */
+html       body { color: #ffffff; }
+html.light body { color: #2e1f1c; }
+
+/* Clases de texto que no invierten automáticamente */
+html.light .text-white     { color: #2e1f1c !important; }
+html.light .text-gray-300  { color: #6b4a3e !important; }
+html.light .text-gray-400  { color: #8b6050 !important; }
+
+/* Texto sobre fondo dorado siempre oscuro */
+html.light .bg-dorado { color: #2e1f1c !important; }

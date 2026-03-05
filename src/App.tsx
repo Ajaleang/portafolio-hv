@@ -7,10 +7,11 @@ import Contact from './pages/Contact';
 import Servicios from './pages/Servicios';
 import Projects from './pages/Projects';
 import WhatsAppButton from './components/WhatsAppButton';
-
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   return (
+    <ThemeProvider>
     <Router>
       <div className="bg-cafe text-white min-h-screen flex flex-col justify-between">
         <Navbar />
@@ -27,6 +28,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </ThemeProvider>
   );
 }
 

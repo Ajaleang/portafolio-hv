@@ -7,11 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        cafe: {
-          DEFAULT: '#2e1f1c', // fondo principal
-          claro: '#4a332f', // un poco más claro para secciones
-        },
-        dorado: '#d4af37', // acentos y detalles
+        // RGB channel format allows opacity modifiers (bg-cafe/60, etc.)
+        cafe: 'rgb(var(--cafe) / <alpha-value>)',
+        'cafe-claro': 'rgb(var(--cafe-claro) / <alpha-value>)',
+        dorado: 'rgb(var(--dorado) / <alpha-value>)',
       },
     },
   },
